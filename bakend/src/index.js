@@ -3,7 +3,7 @@ const app = express()
 const morgan = require('morgan')
 const cors = require('cors')
 const bodyparser = require('body-parser')
-
+require('./database')
 app.set('port', 4000)
 
 //app.use(morgan('dev'))
