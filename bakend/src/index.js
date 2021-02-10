@@ -6,10 +6,14 @@ const bodyparser = require('body-parser')
 require('./database')
 app.set('port', 4000)
 
-//app.use(morgan('dev'))
+app.use(morgan('dev'))
 
 //app.use(bodyparser.urlencoded({extended:true}))
 //app.use(bodyparser.json())
+
+//Rutas
+app.use('/api/', require('./routes/prueba.route'))
+
 
 //start server
 
