@@ -14,5 +14,5 @@ app.set('port', 4000)
 //start server
 
 app.listen(app.get('port'),()=>{
-    console.log('listen port ', app.get('port'))
+    console.log('listen port', app.get('port'))
 })
