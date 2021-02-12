@@ -12,5 +12,17 @@ PruebaCtrl.actualizar=(req, res) => {
 PruebaCtrl.eliminar=(req, res) => {
     res.send('funcionando desde delete')
 }
+PruebaCtrl.crear=async(req, res) => {
+    const {name, email, textMessage}=req.body
+    const NewRegist=new Contact({
+        name,
+        email,
+        textMessage
+    })
+    await NewRegist.save()
+    res.json({
+        mensaje: 'Mensaje enviado'
+    })
+}
 
 module.exports = PruebaCtrl
