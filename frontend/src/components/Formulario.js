@@ -28,7 +28,7 @@ export default function Formulario() {
                     <textarea type="text" className="form-control" id="contactFormTextarea" required placeholder="Mensaje" rows="3" onChange={e => setTextMessaje(e.target.value)}></textarea>
                 </div>
                 <div>
-                    <button type="submit" className="btn btn-primary">Enviar</button>
+                    <button type="submit" className="btn btn-dark">Enviar</button>
                 </div>
             </form>
         </div>
